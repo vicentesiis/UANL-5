@@ -1,0 +1,32 @@
+class Alumno(object):
+	def __init__(self, examenUno, examenDos, examenTres, examenCuatro, Promedio):
+		self.examenUno = examenUno
+		self.examenDos = examenDos
+		self.examenTres = examenTres
+		self.examenCuatro = examenCuatro
+		self.Promedio = Promedio
+		
+	def examenUno(self):
+		return self.examenUno
+	def examenDos(self):
+		return self.examenDos
+	def examenTres(self):
+		return self.examenTres
+	def examenCuatro(self):
+		return self.examenCuatro
+	def Promedio(self):
+		return self.Promedio
+
+def examen():
+	alumnos = []
+	n = input("Ingrese el numero de alumnos")
+	for i in range(n):
+		ex1 = input("Ingrese la calificacion 1")
+		ex2 = input("Ingrese la calificacion 2")
+		ex3 = input("Ingrese la calificacion 3")
+		ex4 = input("Ingrese la calificacion 4")
+		alumnos.append(Alumno(ex1, ex2, ex3, ex4))
+
+	for i in range(n):
+		print(alumnos[i].examenUno)
+examen()
